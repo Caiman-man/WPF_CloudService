@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Ivanov_NP_Cloud_Service" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_CheckRegistrarion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckRegistrarion" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckRegistrarion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckRegistrarionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckRegistrarion_StringFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q1:string" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegisterNewUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterNewUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegisterNewUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterNewUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBaseFolderPath_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBaseFolderPath" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBaseFolderPath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBaseFolderPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBaseFolderPath_StringFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q2:string" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowFilesFromBaseDirectory_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowFilesFromBaseDirectory" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowFilesFromBaseDirectory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowFilesFromBaseDirectoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowFilesFromBaseDirectory_StringFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q3:string" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RefreshFiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshFiles" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RefreshFiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RefreshFiles_StringFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q4:string" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchFiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchFiles" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchFiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchFiles_StringFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q5:string" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateFolder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFolder" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateFolder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFile" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteFile_StringFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q6:string" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetArray_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetArray" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetArray_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetArrayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFolders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFolders" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFolders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFoldersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFilesInsideFolders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilesInsideFolders" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFilesInsideFolders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilesInsideFoldersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UploadFiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFiles" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UploadFiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UploadFiles_StringFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q7:string" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UploadFolders_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFolders" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UploadFolders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFoldersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UploadFilesInsideFolders_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFilesInsideFolders" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UploadFilesInsideFolders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFilesInsideFoldersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="CheckRegistrarion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CheckRegistrarion" message="tns:IService1_CheckRegistrarion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CheckRegistrarionResponse" message="tns:IService1_CheckRegistrarion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/CheckRegistrarionStringFault" name="StringFault" message="tns:IService1_CheckRegistrarion_StringFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterNewUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RegisterNewUser" message="tns:IService1_RegisterNewUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegisterNewUserResponse" message="tns:IService1_RegisterNewUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBaseFolderPath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBaseFolderPath" message="tns:IService1_GetBaseFolderPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBaseFolderPathResponse" message="tns:IService1_GetBaseFolderPath_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/GetBaseFolderPathStringFault" name="StringFault" message="tns:IService1_GetBaseFolderPath_StringFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowFilesFromBaseDirectory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowFilesFromBaseDirectory" message="tns:IService1_ShowFilesFromBaseDirectory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowFilesFromBaseDirectoryResponse" message="tns:IService1_ShowFilesFromBaseDirectory_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/ShowFilesFromBaseDirectoryStringFault" name="StringFault" message="tns:IService1_ShowFilesFromBaseDirectory_StringFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefreshFiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RefreshFiles" message="tns:IService1_RefreshFiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RefreshFilesResponse" message="tns:IService1_RefreshFiles_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/RefreshFilesStringFault" name="StringFault" message="tns:IService1_RefreshFiles_StringFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchFiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchFiles" message="tns:IService1_SearchFiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchFilesResponse" message="tns:IService1_SearchFiles_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/SearchFilesStringFault" name="StringFault" message="tns:IService1_SearchFiles_StringFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateFolder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateFolder" message="tns:IService1_CreateFolder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateFolderResponse" message="tns:IService1_CreateFolder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteFile" message="tns:IService1_DeleteFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteFileResponse" message="tns:IService1_DeleteFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/DeleteFileStringFault" name="StringFault" message="tns:IService1_DeleteFile_StringFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArray">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetArray" message="tns:IService1_GetArray_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetArrayResponse" message="tns:IService1_GetArray_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFolders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetFolders" message="tns:IService1_GetFolders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetFoldersResponse" message="tns:IService1_GetFolders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesInsideFolders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetFilesInsideFolders" message="tns:IService1_GetFilesInsideFolders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetFilesInsideFoldersResponse" message="tns:IService1_GetFilesInsideFolders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UploadFiles" message="tns:IService1_UploadFiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UploadFilesResponse" message="tns:IService1_UploadFiles_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/UploadFilesStringFault" name="StringFault" message="tns:IService1_UploadFiles_StringFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFolders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UploadFolders" message="tns:IService1_UploadFolders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UploadFoldersResponse" message="tns:IService1_UploadFolders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFilesInsideFolders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UploadFilesInsideFolders" message="tns:IService1_UploadFilesInsideFolders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UploadFilesInsideFoldersResponse" message="tns:IService1_UploadFilesInsideFolders_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckRegistrarion">
+      <soap:operation soapAction="http://tempuri.org/IService1/CheckRegistrarion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="StringFault">
+        <soap:fault use="literal" name="StringFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterNewUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/RegisterNewUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBaseFolderPath">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBaseFolderPath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="StringFault">
+        <soap:fault use="literal" name="StringFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ShowFilesFromBaseDirectory">
+      <soap:operation soapAction="http://tempuri.org/IService1/ShowFilesFromBaseDirectory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="StringFault">
+        <soap:fault use="literal" name="StringFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshFiles">
+      <soap:operation soapAction="http://tempuri.org/IService1/RefreshFiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="StringFault">
+        <soap:fault use="literal" name="StringFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SearchFiles">
+      <soap:operation soapAction="http://tempuri.org/IService1/SearchFiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="StringFault">
+        <soap:fault use="literal" name="StringFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFolder">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateFolder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFile">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="StringFault">
+        <soap:fault use="literal" name="StringFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetArray">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetArray" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFolders">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetFolders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesInsideFolders">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetFilesInsideFolders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFiles">
+      <soap:operation soapAction="http://tempuri.org/IService1/UploadFiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="StringFault">
+        <soap:fault use="literal" name="StringFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFolders">
+      <soap:operation soapAction="http://tempuri.org/IService1/UploadFolders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFilesInsideFolders">
+      <soap:operation soapAction="http://tempuri.org/IService1/UploadFilesInsideFolders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Ivanov_NP_Cloud_Service/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,12 @@
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\bin\Debug\Ivanov_NP_Cloud_Service.dll.config
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\bin\Debug\Ivanov_NP_Cloud_Service.dll
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\bin\Debug\Ivanov_NP_Cloud_Service.pdb
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\obj\Debug\Ivanov_NP_Cloud_Service.csproj.AssemblyReference.cache
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\obj\Debug\Ivanov_NP_Cloud_Service.csproj.CoreCompileInputs.cache
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\obj\Debug\Ivanov_NP_Cloud_Service.dll
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\obj\Debug\Ivanov_NP_Cloud_Service.pdb
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\bin\Debug\EntityFramework.dll
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\bin\Debug\EntityFramework.xml
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\bin\Debug\EntityFramework.SqlServer.xml
+D:\Developer\GitHub\NP_Projects\Ivanov_NP_Cloud_Service\Ivanov_NP_Cloud_Service\obj\Debug\Ivanov_NP_Cloud_Service.csproj.CopyComplete
